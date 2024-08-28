@@ -3,7 +3,11 @@
 ## Features
 
 The Term Deposit Calculator takes in inputs and returns the final balance.
-The inputs are: - Start Deposit Amount in $ - Interest Rate as a % - Investment Term in years - Interest Paid (monthly, quarterly, annually, at maturity)
+The inputs are: 
+-  Start Deposit Amount in $
+-  Interest Rate as a %
+-  Investment Term in years
+-  Interest Paid (monthly, quarterly, annually, at maturity)
 
 ## Getting Started
 
