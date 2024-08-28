@@ -1,0 +1,72 @@
+.main {
+    font-family: "Roboto";
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.inputs-container {
+    margin: 4rem 0;
+}
+
+.container {
+    min-width: 20rem;
+    background: #ff7963;
+    margin-top: 10rem;
+    border-radius: 20px;
+    padding: 1rem 2rem 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.select-container {
+    width: 100%;
+    display: flex;
+    margin: 1rem 0;
+}
+
+.select-label {
+    width: 70%;
+}
+
+.select {
+    width: 30%;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    color: #ffed6d
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 1rem;
+}
+
+.button {
+    width: 100%;
+    border-radius: 4px;
+    padding: 0.5rem;
+    background:  #ffed6d;
+}
+
+.final-balance {
+    display: flex;
+    justify-content: center;
+    color:  #ff7963;
+    border-radius: 10px;
+    background: #24242f;
+    margin-top: 1rem;
+}
+
+.error {
+    width: 100%;
+    border: 1px #A63232 solid;
+    margin: 1rem 0 0;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(255, 0, 0, .15);
+    color: rgba(255,255,255,0.75);
+    font-size: 0.75rem;
+}

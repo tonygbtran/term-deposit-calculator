@@ -1,0 +1,13 @@
+.input-container {
+    width: 100%;
+    display: flex;
+    margin: 1rem 0;
+}
+
+.label {
+    width: 70%;
+}
+
+.input {
+    width: 30%;
+}
