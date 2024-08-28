@@ -15,37 +15,37 @@ describe("calculateTermDeposit", () => {
   });
   it("should throw an error when start deposit amount is less than or equal to 0", () => {
     expect(() => calculateTermDeposit(-17500, 1.4, 2, "annually")).toThrowError(
-      "Start Deposit Amount is invalid"
+      "Start Deposit Amount must be a positive value"
     );
   });
   it("should throw an error when interest rate less than 0", () => {
     expect(() => calculateTermDeposit(17500, -1.4, 2, "annually")).toThrowError(
-      "Interest Rate is invalid"
+      "Interest Rate must be a positive value"
     );
   });
   it("should throw an error when investment term is negative", () => {
     expect(() => calculateTermDeposit(17500, 1.4, -2, "annually")).toThrowError(
-      "Investment Term is invalid"
+      "Investment Term must be a positive value"
     );
   });
   it("should throw an error when start deposit amount is undefined", () => {
     expect(() =>
       calculateTermDeposit(undefined, 1.4, 2, "annually")
-    ).toThrowError("Start Deposit Amount is invalid");
+    ).toThrowError("Start Deposit Amount is required");
   });
   it("should throw an error when interest rate is undefined", () => {
     expect(() =>
       calculateTermDeposit(17500, undefined, 2, "annually")
-    ).toThrowError("Interest Rate is invalid");
+    ).toThrowError("Interest Rate is required");
   });
   it("should throw an error when investment term is undefined", () => {
     expect(() =>
       calculateTermDeposit(17500, 1.4, undefined, "annually")
-    ).toThrowError("Investment Term is invalid");
+    ).toThrowError("Investment Term is required");
   });
   it("should throw an error when interest paid is undefined", () => {
     expect(() => calculateTermDeposit(17500, 1.4, 2, undefined)).toThrowError(
-      "Interest Paid is invalid"
+      "Interest Paid is required"
     );
   });
 });
