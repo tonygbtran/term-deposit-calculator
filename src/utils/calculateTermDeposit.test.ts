@@ -31,21 +31,21 @@ describe("calculateTermDeposit", () => {
   it("should throw an error when start deposit amount is undefined", () => {
     expect(() =>
       calculateTermDeposit(undefined, 1.4, 2, "annually")
-    ).toThrowError("Start Deposit Amount is undefined");
+    ).toThrowError("Start Deposit Amount is invalid");
   });
   it("should throw an error when interest rate is undefined", () => {
     expect(() =>
       calculateTermDeposit(17500, undefined, 2, "annually")
-    ).toThrowError("Interest Rate is undefined");
+    ).toThrowError("Interest Rate is invalid");
   });
   it("should throw an error when investment term is undefined", () => {
     expect(() =>
       calculateTermDeposit(17500, 1.4, undefined, "annually")
-    ).toThrowError("Investment Term is undefined");
+    ).toThrowError("Investment Term is invalid");
   });
   it("should throw an error when interest paid is undefined", () => {
     expect(() => calculateTermDeposit(17500, 1.4, 2, undefined)).toThrowError(
-      "Interest Paid is undefined"
+      "Interest Paid is invalid"
     );
   });
 });

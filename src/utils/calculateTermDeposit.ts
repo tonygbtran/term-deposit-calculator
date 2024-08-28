@@ -4,26 +4,17 @@ export function calculateTermDeposit(
   investmentTerm: number | undefined,
   interestPaid: "monthly" | "quarterly" | "annually" | "atMaturity" | undefined
 ): number {
-  if (startDepositAmount === undefined) {
-    throw new Error("Start Deposit Amount is undefined");
-  }
-  if (interestRate === undefined) {
-    throw new Error("Interest Rate is undefined");
-  }
-  if (investmentTerm === undefined) {
-    throw new Error("Investment Term is undefined");
-  }
-  if (interestPaid === undefined) {
-    throw new Error("Interest Paid is undefined");
-  }
-  if (startDepositAmount <= 0) {
+  if (startDepositAmount === undefined || startDepositAmount <= 0) {
     throw new Error("Start Deposit Amount is invalid");
   }
-  if (interestRate <= 0) {
+  if (interestRate === undefined || interestRate <= 0) {
     throw new Error("Interest Rate is invalid");
   }
-  if (investmentTerm <= 0) {
+  if (investmentTerm === undefined || investmentTerm <= 0) {
     throw new Error("Investment Term is invalid");
+  }
+  if (interestPaid === undefined) {
+    throw new Error("Interest Paid is invalid");
   }
   const rate = interestRate / 100; // Convert rate from 1% to 0.01
 
