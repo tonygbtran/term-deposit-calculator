@@ -36,6 +36,9 @@ const TermDepositCalculator: React.FC = () => {
   return (
     <div className="main">
       <div className="container">
+        <div className="image-container">
+          <img src="./UP-MEDIA-LOGO-LIGHT.png" alt="up-logo" height={100} />
+        </div>
         <h1 className="heading">Term Deposit Calculator</h1>
         <div className="inputs-container">
           <InputField

@@ -2,12 +2,17 @@
     width: 100%;
     display: flex;
     margin: 1rem 0;
+    align-items: center;
 }
 
 .label {
     width: 70%;
+    font-size: 1rem;
 }
 
 .input {
     width: 30%;
+    border-radius: 6px;
+    padding: 0.5rem;
+    font-size: 1rem;
 }
